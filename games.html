@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="シャックが制作したゲーム一覧 — The Sandbox & Roblox">
+    <meta property="og:title" content="シャック | Games">
+    <meta property="og:description" content="The Sandbox & Roblox で制作したゲーム作品集">
+    <meta property="og:type" content="website">
+    <title>シャック | Games</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/links.css">
+    <link rel="stylesheet" href="css/games.css">
+</head>
+
+<body>
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <div class="page-wrapper">
+        <!-- Back nav -->
+        <a href="links.html" class="back-link" aria-label="リンクページに戻る">
+            <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
+                <path d="M16 10H4M4 10L9 5M4 10L9 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Back</span>
+        </a>
+
+        <!-- Header -->
+        <header class="games-header">
+            <h1 class="games-title">GAMES</h1>
+            <p class="games-sub">The Sandbox & Roblox で制作したゲーム作品</p>
+        </header>
+
+        <!-- Tabs -->
+        <div class="tab-bar" role="tablist" aria-label="プラットフォーム選択">
+            <button class="tab active" data-tab="sandbox" role="tab" aria-selected="true" aria-controls="panel-sandbox">
+                <span class="tab-label">The Sandbox</span>
+                <span class="tab-count">7</span>
+            </button>
+            <button class="tab" data-tab="roblox" role="tab" aria-selected="false" aria-controls="panel-roblox">
+                <span class="tab-label">Roblox</span>
+                <span class="tab-count">1</span>
+            </button>
+        </div>
+
+        <!-- The Sandbox -->
+        <div class="tab-content active" data-panel="sandbox" id="panel-sandbox" role="tabpanel">
+            <div class="game-list">
+                <a href="https://www.sandbox.game/ja/experiences/Castle%20of%20Shadows/12bfd0e6-0947-4f4d-9a75-915dcd6ac972/page/" target="_blank" rel="noopener noreferrer" class="gcard" style="--hue:260">
+                    <div class="gcard-visual">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="gcard-body">
+                        <span class="gcard-name">Castle of Shadows</span>
+                        <span class="gcard-platform">The Sandbox</span>
+                    </div>
+                    <svg class="gcard-arrow" width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+
+                <a href="https://www.sandbox.game/ja/experiences/Boom!%20Zoom!%20SUV%20Madness!/c2390e81-7049-42cb-880f-8a327b0193eb/page/" target="_blank" rel="noopener noreferrer" class="gcard" style="--hue:20">
+                    <div class="gcard-visual">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M5 17H3v-4l2-5h9l4 5h3v4h-2M5 12h12" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="gcard-body">
+                        <span class="gcard-name">Boom! Zoom! SUV Madness!</span>
+                        <span class="gcard-platform">The Sandbox</span>
+                    </div>
+                    <svg class="gcard-arrow" width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+
+                <a href="https://www.sandbox.game/ja/experiences/HARIMA%20WORKS/f8361c45-31e1-40c7-9646-95f110631b2d/page/" target="_blank" rel="noopener noreferrer" class="gcard" style="--hue:40">
+                    <div class="gcard-visual">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="gcard-body">
+                        <span class="gcard-name">HARIMA WORKS</span>
+                        <span class="gcard-platform">The Sandbox</span>
+                    </div>
+                    <svg class="gcard-arrow" width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+
+                <a href="https://www.sandbox.game/ja/experiences/%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89%E3%83%BB%E3%81%B2%E3%81%AA%E3%81%9F%E7%94%BA%E3%83%BB%E9%AC%BC%E9%96%80%E3%82%92%E5%88%B6%E8%A6%87%E3%81%9B%E3%82%88%EF%BC%81/55fc52ab-6e2c-436b-bded-7ced65fd533f/page/" target="_blank" rel="noopener noreferrer" class="gcard" style="--hue:330">
+                    <div class="gcard-visual">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="gcard-body">
+                        <span class="gcard-name">スターランド・ひなた町・鬼門を制覇せよ！</span>
+                        <span class="gcard-platform">The Sandbox</span>
+                    </div>
+                    <svg class="gcard-arrow" width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+
+                <a href="https://www.sandbox.game/ja/experiences/%E3%81%A8%E3%81%97%E3%81%BE%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89%E3%83%97%E3%83%AC%E3%82%A4%E3%83%91%E3%83%BC%E3%82%AF/7f4a7dcf-2971-4eb0-a4b9-eadd54a40768/page/" target="_blank" rel="noopener noreferrer" class="gcard" style="--hue:160">
+                    <div class="gcard-visual">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="gcard-body">
+                        <span class="gcard-name">としまワールドプレイパーク</span>
+                        <span class="gcard-platform">The Sandbox</span>
+                    </div>
+                    <svg class="gcard-arrow" width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+
+                <a href="https://www.sandbox.game/ja/experiences/%E3%82%BF%E3%83%AF%E3%83%BC%E3%81%A8%E3%83%AA%E3%83%B3%E3%82%B4%E3%81%AE%E3%81%BE%E3%81%A1/d8afdb37-e130-4163-91dd-e6f458209359/page/" target="_blank" rel="noopener noreferrer" class="gcard" style="--hue:100">
+                    <div class="gcard-visual">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M9 21V9l3-6 3 6v12" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="gcard-body">
+                        <span class="gcard-name">タワーとリンゴのまち</span>
+                        <span class="gcard-platform">The Sandbox</span>
+                    </div>
+                    <svg class="gcard-arrow" width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+
+                <a href="https://www.sandbox.game/ja/experiences/IKB%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%BB%E3%82%A8%E3%83%9E%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%B3%E3%82%B7%E3%83%BC/c39a9f86-3b08-4f72-8d05-716362ce2494/page/" target="_blank" rel="noopener noreferrer" class="gcard" style="--hue:200">
+                    <div class="gcard-visual">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="gcard-body">
+                        <span class="gcard-name">IKBステーション・エマージェンシー</span>
+                        <span class="gcard-platform">The Sandbox</span>
+                    </div>
+                    <svg class="gcard-arrow" width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Roblox -->
+        <div class="tab-content" data-panel="roblox" id="panel-roblox" role="tabpanel">
+            <div class="game-list">
+                <a href="https://www.roblox.com/ja/games/106476269244900/Mini-Survivor-2" target="_blank" rel="noopener noreferrer" class="gcard" style="--hue:0">
+                    <div class="gcard-visual">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="gcard-body">
+                        <span class="gcard-name">Mini Survivor 2</span>
+                        <span class="gcard-platform">Roblox</span>
+                    </div>
+                    <svg class="gcard-arrow" width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2026 My Voxels Inc.</p>
+        </footer>
+    </div>
+
+    <script src="js/links.js"></script>
+</body>
+
+</html>

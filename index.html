@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="マイボクセル株式会社（My Voxels Inc.）— ゲーム開発・AI・教育で、アイデアひとつから世界を創るクリエイティブスタジオ。">
+    <meta property="og:title" content="My Voxels Inc. | Create. Connect. Catalyze.">
+    <meta property="og:description" content="アイデアひとつから、世界を創る。ゲーム開発・AI・教育のクリエイティブスタジオ。">
+    <meta property="og:type" content="website">
+    <title>My Voxels Inc. | Create. Connect. Catalyze.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Cursor glow -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <img src="assets/logo.png" alt="My Voxels" class="logo-img">
+                <span class="logo-text">MY VOXELS</span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="メニュー切替">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#philosophy" class="nav-link">Philosophy</a></li>
+                <li><a href="#works" class="nav-link">What We Do</a></li>
+                <li><a href="#showcase" class="nav-link">Showcase</a></li>
+                <li><a href="#news" class="nav-link">News</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link nav-link--cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Creative Studio — Tokyo, Japan
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-line"><span class="hero-word accent-cyan"
+                        style="animation-delay:.2s">Create.</span></span>
+                <span class="hero-line"><span class="hero-word accent-purple"
+                        style="animation-delay:.45s">Connect.</span></span>
+                <span class="hero-line"><span class="hero-word accent-pink"
+                        style="animation-delay:.7s">Catalyze.</span></span>
+            </h1>
+            <p class="hero-sub">
+                作る、つながる、加速する。<br>
+                アイデアひとつから、<span class="sp-br"></span>次の世界を切り拓く。
+            </p>
+            <div class="hero-cta">
+                <a href="#works" class="btn btn-glow">
+                    <span>What We Do</span>
+                    <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-outline">Contact Us</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- ========== MARQUEE ========== -->
+    <div class="marquee-strip" aria-hidden="true">
+        <div class="marquee-track">
+            <span>GAME DEV</span><span>✦</span>
+            <span>DIGITAL CONTENT</span><span>✦</span>
+            <span>AI SOLUTIONS</span><span>✦</span>
+            <span>EDUCATION</span><span>✦</span>
+            <span>COMMUNITY</span><span>✦</span>
+            <span>ROBLOX</span><span>✦</span>
+            <span>VOXEL</span><span>✦</span>
+            <span>CREATIVE</span><span>✦</span>
+            <span>GAME DEV</span><span>✦</span>
+            <span>DIGITAL CONTENT</span><span>✦</span>
+            <span>AI SOLUTIONS</span><span>✦</span>
+            <span>EDUCATION</span><span>✦</span>
+            <span>COMMUNITY</span><span>✦</span>
+            <span>ROBLOX</span><span>✦</span>
+            <span>VOXEL</span><span>✦</span>
+            <span>CREATIVE</span><span>✦</span>
+        </div>
+    </div>
+
+    <!-- ========== PHILOSOPHY ========== -->
+    <section class="section" id="philosophy">
+        <div class="container">
+            <header class="sec-head anim">
+                <span class="sec-label">Philosophy</span>
+                <h2 class="sec-title-big">アイデアひとつから、<br>世界を創る。</h2>
+                <p class="sec-lead">小さなひらめきを積み重ね、未知の体験を生み出す。<br>テクノロジーとクリエイティビティの交差点で、私たちは挑戦し続けます。</p>
+            </header>
+            <div class="card-row">
+                <article class="glass-card anim">
+                    <div class="glass-card-icon"><img src="assets/icon-vision.png" alt="Vision" width="64" height="64">
+                    </div>
+                    <h3>VISION</h3>
+                    <p>テクノロジーの力で、誰もがクリエイターになれる世界を実現する。</p>
+                </article>
+                <article class="glass-card anim">
+                    <div class="glass-card-icon"><img src="assets/icon-mission.png" alt="Mission" width="64"
+                            height="64"></div>
+                    <h3>MISSION</h3>
+                    <p>ゲーム、AI、教育を融合し、次世代のクリエイターと体験を育む。</p>
+                </article>
+                <article class="glass-card anim">
+                    <div class="glass-card-icon"><img src="assets/icon-values.png" alt="Values" width="64" height="64">
+                    </div>
+                    <h3>VALUES</h3>
+                    <p>好奇心を原動力に。失敗を恐れず挑戦し、楽しさの中から本物の価値を。</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== WHAT WE DO ========== -->
+    <section class="section section--alt" id="works">
+        <div class="container">
+            <header class="sec-head anim">
+                <span class="sec-label">What We Do</span>
+                <h2 class="sec-title-big">3つの領域で、<br>創造を加速する。</h2>
+            </header>
+            <div class="work-grid">
+                <article class="work-card anim" data-accent="cyan">
+                    <span class="work-num">01</span>
+                    <div class="work-icon"><i data-lucide="gamepad-2" stroke-width="1.5"></i></div>
+                    <h3 class="work-title">Game &amp;<br>Digital Content</h3>
+                    <p class="work-desc">ゲーム及びデジタルコンテンツの企画・開発・運営。映像・音響・グラフィックのクリエイティブ制作から配信まで。</p>
+                    <ul class="work-tags">
+                        <li>ゲーム開発</li>
+                        <li>コンテンツ制作</li>
+                        <li>映像・音響</li>
+                        <li>配信・運営</li>
+                    </ul>
+                </article>
+                <article class="work-card anim" data-accent="purple">
+                    <span class="work-num">02</span>
+                    <div class="work-icon"><i data-lucide="brain-circuit" stroke-width="1.5"></i></div>
+                    <h3 class="work-title">AI &amp;<br>Technology</h3>
+                    <p class="work-desc">AI技術を活用したシステム・サービスの企画・開発。クリエイターの制作プロセスを加速するツールを構築。</p>
+                    <ul class="work-tags">
+                        <li>AI開発</li>
+                        <li>ツール構築</li>
+                        <li>自動化</li>
+                        <li>R&amp;D</li>
+                    </ul>
+                </article>
+                <article class="work-card anim" data-accent="pink">
+                    <span class="work-num">03</span>
+                    <div class="work-icon"><i data-lucide="graduation-cap" stroke-width="1.5"></i></div>
+                    <h3 class="work-title">Education &amp;<br>Community</h3>
+                    <p class="work-desc">プログラミング・ゲーム制作の教育事業。オンラインサロン・コミュニティ企画運営、イベント・ワークショップの開催。</p>
+                    <ul class="work-tags">
+                        <li>教育事業</li>
+                        <li>コミュニティ</li>
+                        <li>イベント</li>
+                        <li>オンラインサロン</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SHOWCASE ========== -->
+    <section class="section" id="showcase">
+        <div class="container">
+            <header class="sec-head anim">
+                <span class="sec-label">Showcase</span>
+                <h2 class="sec-title-big">活動の記録</h2>
+                <p class="sec-lead">ゲーム制作教室、コミュニティイベント、制作物の一部をご紹介します。</p>
+            </header>
+            <div class="showcase-grid">
+                <div class="showcase-item showcase-item--wide anim">
+                    <img src="assets/showcase-1.jpg" alt="ゲーム制作教室の様子" class="showcase-img" loading="lazy">
+                    <div class="showcase-caption">
+                        <span class="showcase-tag">Education</span>
+                        <h4>ゲーム制作教室</h4>
+                        <p>Robloxを使ったゲーム制作ワークショップの様子</p>
+                    </div>
+                </div>
+                <div class="showcase-item anim">
+                    <img src="assets/showcase-2.jpg" alt="コミュニティイベント" class="showcase-img" loading="lazy">
+                    <div class="showcase-caption">
+                        <span class="showcase-tag">Community</span>
+                        <h4>コミュニティイベント</h4>
+                    </div>
+                </div>
+                <div class="showcase-item anim">
+                    <img src="assets/showcase-3.jpg" alt="ゲーム制作実績" class="showcase-img" loading="lazy">
+                    <div class="showcase-caption">
+                        <span class="showcase-tag">Game Dev</span>
+                        <h4>ゲーム制作実績</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== NEWS ========== -->
+    <section class="section section--alt" id="news">
+        <div class="container">
+            <header class="sec-head anim">
+                <span class="sec-label">News</span>
+                <h2 class="sec-title-big">最新情報</h2>
+            </header>
+            <div class="news-list">
+                <article class="news-row anim">
+                    <time datetime="2026-02-23">2026.02.23</time>
+                    <span class="news-tag">お知らせ</span>
+                    <p>ウェブサイトを公開しました</p>
+                </article>
+                <article class="news-row anim">
+                    <time datetime="2026-02-22">2026.02.22</time>
+                    <span class="news-tag">プレスリリース</span>
+                    <p>マイボクセル株式会社を設立しました</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="section" id="about">
+        <div class="container">
+            <header class="sec-head anim">
+                <span class="sec-label">Company</span>
+                <h2 class="sec-title-big">会社概要</h2>
+            </header>
+            <div class="info-table-wrap anim">
+                <table class="info-table">
+                    <tbody>
+                        <tr>
+                            <th>商号</th>
+                            <td>マイボクセル株式会社<br><span class="en">My Voxels Inc.</span></td>
+                        </tr>
+                        <tr>
+                            <th>代表者</th>
+                            <td>代表取締役 池田秀一</td>
+                        </tr>
+                        <tr>
+                            <th>所在地</th>
+                            <td>東京都豊島区</td>
+                        </tr>
+                        <tr>
+                            <th>設立</th>
+                            <td>2026年</td>
+                        </tr>
+                        <tr>
+                            <th>資本金</th>
+                            <td>100万円</td>
+                        </tr>
+                        <tr>
+                            <th>事業年度</th>
+                            <td>4月1日〜3月31日</td>
+                        </tr>
+                        <tr>
+                            <th>事業内容</th>
+                            <td>ゲーム・デジタルコンテンツの企画開発 / AI技術を活用したシステム開発 / 教育事業・コミュニティ運営</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="section section--alt" id="contact">
+        <div class="container">
+            <header class="sec-head anim">
+                <span class="sec-label">Contact</span>
+                <h2 class="sec-title-big">お問い合わせ</h2>
+                <p class="sec-lead">事業に関するご相談やお問い合わせは、<br class="sp-only">下記フォームからお気軽にどうぞ。</p>
+            </header>
+            <div class="contact-layout">
+                <form class="contact-form anim" id="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">お名前 <span class="req">*</span></label>
+                        <input type="text" id="name" name="name" required placeholder="山田 太郎">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス <span class="req">*</span></label>
+                        <input type="email" id="email" name="email" required placeholder="you@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="category">お問い合わせ種別</label>
+                        <select id="category" name="category">
+                            <option value="">選択してください</option>
+                            <option value="game">ゲーム・コンテンツ制作について</option>
+                            <option value="ai">AI・テクノロジーについて</option>
+                            <option value="education">教育・コミュニティについて</option>
+                            <option value="media">取材・メディア</option>
+                            <option value="other">その他</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">メッセージ <span class="req">*</span></label>
+                        <textarea id="message" name="message" rows="5" required
+                            placeholder="お問い合わせ内容をご記入ください"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-glow btn-submit">
+                        <span>送信する</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                        </svg>
+                    </button>
+                </form>
+                <aside class="contact-side anim">
+                    <div class="contact-side-block">
+                        <h4>SNS</h4>
+                        <div class="social-row">
+                            <a href="https://x.com/Mr_ShacksLife" target="_blank" rel="noopener noreferrer"
+                                class="social-btn" aria-label="X"><svg width="20" height="20" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                </svg></a>
+                            <a href="https://www.instagram.com/mr_shackslife/" target="_blank" rel="noopener noreferrer"
+                                class="social-btn" aria-label="Instagram"><svg width="20" height="20"
+                                    viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                                </svg></a>
+                            <a href="https://www.tiktok.com/@shack555" target="_blank" rel="noopener noreferrer"
+                                class="social-btn" aria-label="TikTok"><svg width="20" height="20" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0011.14 4.15 6.29 6.29 0 001.53-4.1V8.29a8.28 8.28 0 004.77 1.52V6.37a4.85 4.85 0 01-1-.32z" />
+                                </svg></a>
+                            <a href="https://discord.com/invite/rZ4s5NtZSC" target="_blank" rel="noopener noreferrer"
+                                class="social-btn" aria-label="Discord"><svg width="20" height="20" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561 19.9312 19.9312 0 005.9932 3.0294.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.8732.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286 19.8652 19.8652 0 006.0019-3.0294.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189z" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="contact-side-block">
+                        <h4>Location</h4>
+                        <p>東京都豊島区</p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <img src="assets/logo.png" alt="My Voxels" class="footer-logo">
+                    <span>MY VOXELS INC.</span>
+                </div>
+                <nav class="footer-nav">
+                    <a href="#philosophy">Philosophy</a>
+                    <a href="#works">What We Do</a>
+                    <a href="#showcase">Showcase</a>
+                    <a href="#news">News</a>
+                    <a href="#about">About</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+            <p class="footer-copy">&copy; 2026 My Voxels Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 6L9 17l-5-5" />
+        </svg>
+        <span>送信しました！追ってご連絡いたします。</span>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>
