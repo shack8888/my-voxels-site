@@ -232,8 +232,10 @@ function initContactForm() {
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
+        // TODO: Connect to a form backend (e.g., Formspree, Google Forms)
+        // For now, show a notice that the form is not yet functional
+        toast.textContent = 'お問い合わせフォームは現在準備中です。SNSからご連絡ください。';
         toast.classList.add('show');
         setTimeout(() => toast.classList.remove('show'), 4000);
-        form.reset();
     });
 }
